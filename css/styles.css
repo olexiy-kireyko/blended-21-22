@@ -1,80 +1,116 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6{
-    margin: 0;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-img{
-    display: block;
+img {
+  display: block;
 }
 
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
-body{
-    font-family: "Inter", sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
 .header {
-    /* backdrop-filter: blur(35px); */
-/* background: linear-gradient(99deg, rgba(0, 197, 235, 0.3) 0%, rgba(181, 68, 254, 0.3) 100%); */
-background: #06071b;
+  /* backdrop-filter: blur(35px); */
+  /* background: linear-gradient(99deg, rgba(0, 197, 235, 0.3) 0%, rgba(181, 68, 254, 0.3) 100%); */
+  background: #06071b;
 }
 
 .container {
-    width: 1280px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
+  width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-link {
-    font-weight: 400;
-font-size: 28px;
-color: #fff;
-padding-top: 19px;
-padding-bottom: 19px;
-
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .header-nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .header-list {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .header-item {
-
 }
 
 .header-link-item {
-    font-weight: 400;
-    font-size: 12px;
-    color: #fff;
-    padding-top: 29px;
-    padding-bottom: 28px;
-    display: block;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  padding-top: 29px;
+  padding-bottom: 28px;
+  display: block;
+}
+
+.team {
+}
+
+.container {
+}
+
+.container .team-container {
+  padding: 25px 16px;
+}
+
+.team-head {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-text {
+}
+
+.team-list {
+}
+
+.team-item {
+}
+
+.team-item-img {
+}
+
+.team-item-head {
+}
+
+.team-item-text {
 }
