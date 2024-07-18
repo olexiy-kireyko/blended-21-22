@@ -147,3 +147,102 @@ body {
   color: #fff;
 }
 /* END of      team section */
+
+
+/*-------section-2---------*/
+
+.section-features {
+  padding: 20px auto 15px;
+}
+
+.container-new {
+  position: relative;
+  max-width: 973px;
+  margin: 0 auto;
+}
+
+.title-features {
+  margin: 0 auto 80px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.features-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000;
+  max-width: 855px;
+  margin: 0 auto 56px;
+}
+
+.container-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list {
+  margin-top: 61px;
+}
+
+.foto-div {
+  position: relative;
+}
+
+.foto-item {
+  position: absolute;
+  transform: translateX(-125%);
+  top: -4px;
+}
+
+.features-item {
+  padding-left: 36px;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 13px;
+}
+
+.width-title {
+  max-width: 173px;
+}
+
+.item-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  max-width: 220px;
+}
+
+.bottom-text {
+  margin-bottom: 56px;
+}
+
+.bottom-text-two {
+  margin-bottom: 52px;
+}
+
+.bottom-text-three {
+  margin-bottom: 47px;
+}
+
+.width-text {
+  max-width: 223px;
+}
+
+.features-foto {
+  position: absolute;
+  top: 64%;
+  transform: translateY(-50%);
+  left: 295px;
+  padding-bottom: 15px;
+}
+/*------END-section-2---------*/
