@@ -114,3 +114,57 @@ body {
 
 .team-item-text {
 }
+
+/* WATCH THE VIDEO */
+
+.section-wtv {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  padding: 60px 16px;
+  background: #06071b;
+}
+
+.wtv-container {
+  display: flex;
+}
+
+.header-wtv {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.text-wtv {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  width: 479px;
+  margin-bottom: 40px;
+}
+
+.wtv-list {
+  display: flex;
+  gap: 20px;
+}
+
+.wtv-img-phone {
+  display: flex;
+  margin-left: auto;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+}
+
+.wtv-list-item-pic {
+  width: 60px;
+  height: 60px;
+}
+
+.wtv-list-item-pic:hover {
+  display: block;
+  transform: rotate(360deg);
+  transition-duration: 500ms;
+}
