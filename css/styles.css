@@ -82,38 +82,129 @@ body {
   display: block;
 }
 
+/* ------------ section-features  ---------------*/
+
+.section-features {
+  padding: 100px 0;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  max-width: 179px;
+  margin: 0 auto 80px;
+}
+.features-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+  margin: 0 auto;
+  max-width: 855px;
+  padding-bottom: 56px;
+}
+
+.features {
+  max-width: 973px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.features {
+  display: flex;
+  position: relative;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% - 492px) / 2);
+  gap: 24px;
+  padding-top: 61px;
+}
+.features-item {
+}
+.features-item-title {
+  margin-bottom: 13px;
+}
+.features-item-text {
+}
+
+.features-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* END SECTION FEATURES */
+
+/*        team section */
 .team {
 }
 
-.container {
+.team-container {
+  padding-top: 80px;
+  padding-bottom: 16px;
 }
 
-.container .team-container {
-  padding: 25px 16px;
-}
-
-.team-head {
-  margin-left: auto;
-  margin-right: auto;
+.team .team-head {
+  margin: 0 auto 80px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  max-width: 129px;
 }
 
 .team-text {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+  max-width: 886px;
+  margin-bottom: 56px;
 }
 
 .team-list {
+  display: flex;
+  gap: 32px;
 }
 
 .team-item {
+  width: calc((100% - 96) / 4);
+  padding: 14px 12px 12px;
+  border-radius: 15px;
+  background-image: linear-gradient(115deg, #00c5eb 0%, #b544fe 100%);
 }
 
 .team-item-img {
 }
 
+.team-item-card {
+  padding-top: 20px;
+}
+
 .team-item-head {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 .team-item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71429;
+  text-align: center;
+  color: #fff;
 }
+
 
 /* WATCH THE VIDEO */
 
@@ -168,3 +259,6 @@ body {
   transform: rotate(360deg);
   transition-duration: 500ms;
 }
+
+/* END of      team section */
+
