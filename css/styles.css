@@ -211,10 +211,64 @@ body {
     color: #fff;
 }
 
+/* Review section */
+
+.review-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(../images/reviews-img-spraying.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.review-title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.review-img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.review-subtitle-name {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.review-subtitle-company {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71429;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.review-text {
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000;
+    max-width: 886px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
 /* Footer */
 
 .footer {
     background-color: #06071b;
+    background-image: url(../images/footer-img-spraying.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40px -200px;
     padding-top: 80px;
     padding-bottom: 20px;
 }
