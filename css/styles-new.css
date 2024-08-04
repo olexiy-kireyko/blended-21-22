@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 320px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 16px;
+    }
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(99deg, rgba(0, 197, 235, 0.3) 0%, rgba(181, 68, 254, 0.3) 100%);
+    padding: 14px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-link {
+    position: relative;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+    z-index: 100;
+}
+
+.header-nav {
+    position: absolute;
+    padding: 120px 15px 109px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: #07081c;*/
+    transform: translateX(105%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99;
+    background: url("../images/mobile.jpg");
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    align-items: center;
+}
+
+.header-item {
+    width: 100%;
+    text-align: center;
+}
+
+.header-link-item {
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+
+}
+
+.header-link-item.is-active {
+    background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-nav.is-open {
+    transform: translateX(0);
+}
+
+.mob-menu-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.mob-menu-btn-close {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.hero {
+    background-color: #06071b;
+}

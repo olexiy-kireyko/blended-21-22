@@ -16,17 +16,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-new.css" />
     <title>Mobile app</title>
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
         <a class="header-link" href="./index.html">Mobileapp</a>
-        <nav class="header-nav">
+        <nav class="header-nav is-open">
           <ul class="header-list">
             <li class="header-item">
-              <a class="header-link-item" href="">HOME</a>
+              <a class="header-link-item is-active" href="">HOME</a>
             </li>
             <li class="header-item">
               <a class="header-link-item" href="">FEATURES</a>
@@ -41,11 +41,17 @@
               <a class="header-link-item" href="">CONTACT</a>
             </li>
           </ul>
+            <button class="mob-menu-btn-close">
+                <img src="./images/icons/close-icon.svg" alt="menu-icon">
+            </button>
         </nav>
+          <button class="mob-menu-btn">
+              <img src="./images/icons/menu-icon.svg" alt="menu-icon">
+          </button>
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <h1>Introducing Mobileapp</h1>
         <h3>Download our mobile app today!</h3>
         <ul>
