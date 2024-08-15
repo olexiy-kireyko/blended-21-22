@@ -22,47 +22,100 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a class="header-link" href="./index.html">Mobileapp</a>
-        <nav class="header-nav">
+        <a class="header-link" href="./index.html" data-mobmenuname
+          >Mobileapp</a
+        >
+        <nav class="header-nav" data-mobmenu>
           <ul class="header-list">
             <li class="header-item">
               <a class="header-link-item is-active" href="">HOME</a>
             </li>
             <li class="header-item">
-              <a class="header-link-item" href="">FEATURES</a>
+              <a class="header-link-item" href="#features" data-mobmenufeatures
+                >FEATURES</a
+              >
             </li>
             <li class="header-item">
-              <a class="header-link-item" href="">TEAM</a>
+              <a class="header-link-item" href="#team" data-mobmenuteam>TEAM</a>
             </li>
             <li class="header-item">
-              <a class="header-link-item" href="">TESTIMONIALS</a>
+              <a
+                class="header-link-item"
+                href="#testimonials"
+                data-mobmenutestimonials
+                >TESTIMONIALS</a
+              >
             </li>
             <li class="header-item">
-              <a class="header-link-item" href="">CONTACT</a>
+              <a class="header-link-item" href="#contact" data-mobmenucontact
+                >CONTACT</a
+              >
             </li>
           </ul>
-            <button class="mob-menu-btn-close">
-                <img src="./images/icons/close-icon.svg" alt="menu-icon">
-            </button>
-        </nav>
-          <button class="mob-menu-btn">
-              <img src="./images/icons/menu-icon.svg" alt="menu-icon">
+          <button class="mob-menu-btn-close" data-mobmenu-close>
+            <img src="./images/icons/close-icon.svg" alt="menu-icon" />
           </button>
+        </nav>
+        <button class="mob-menu-btn" data-mobmenu-open>
+          <img src="./images/icons/menu-icon.svg" alt="menu-icon" />
+        </button>
       </div>
     </header>
     <main>
-      <section class="hero">
-        <h1>Introducing Mobileapp</h1>
-        <h3>Download our mobile app today!</h3>
-        <ul>
-          <li>Real-time updates and notifications for timely information</li>
-          <li>Robust analytics and reporting for data-driven insights</li>
-          <li>Offline capabilities for uninterrupted use</li>
+      <section class="hero container">
+        <h1 class="hero-header-one">Introducing Mobileapp</h1>
+        <h3 class="hero-header-three">Download our mobile app today!</h3>
+        <ul class="hero-list">
+          <li class="hero-item">
+            <div class="hero-item-block">
+              <svg class="hero-svg" width="18" height="18">
+                <use href="/images/icons.svg#icon-dashicons"></use>
+              </svg>
+              Real-time updates and notifications for timely information
+            </div>
+          </li>
+          <li class="hero-item">
+            <div class="hero-item-block">
+              <svg class="hero-svg" width="18" height="18">
+                <use href="/images/icons.svg#icon-dashicons"></use>
+              </svg>
+              Robust analytics and reporting for data-driven insights
+            </div>
+          </li>
+          <li class="hero-item">
+            <div class="hero-item-block">
+              <svg class="hero-svg" width="18" height="18">
+                <use href="/images/icons.svg#icon-dashicons"></use>
+              </svg>
+              Offline capabilities for uninterrupted use
+            </div>
+          </li>
         </ul>
-        <button>Download</button>
-        <img src="./images/phone.png" alt="Mobile app" />
+        <button class="hero-btn" type="button" data-modal-open>Download</button>
+        <picture>
+          <sourse
+            srcset="
+            ./images/hero-img-tablet@1x.png 1x,
+            ./images/hero-img-tablet@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <sourse
+            srcset="
+            ./images/hero-img-desktop@1x.png 1x, 
+            ./images/hero-img-desktop@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="hero-img"
+            src="./images/hero-img-desktop@1x.png"
+            alt="Mobile app"
+            width="580"
+          />
+        </picture>
+        <img class="hero-img-spray" src="./images/hero-img-spray.png" alt="" />
       </section>
-      <section class="container section-features">
+
+      <section class="container section-features" id="features">
         <h2 class="features-title">KEY FEATURES</h2>
         <p class="features-subtitle">
           Get the best mobile experience with our Mobileapp. With a
@@ -71,103 +124,165 @@
           need to stay connected and productive
         </p>
         <div class="features">
-          <ul class="features-list">
-            <li class="features-item">
-              <h3 class="features-item-title">User-Friendly Interface:</h3>
-              <p class="features-item-text">
-                Intuitive and easy-to-navigate interface designed to provide a
-                seamless mobile experience for users.
-              </p>
-            </li>
-            <li class="features-item">
-              <h3 class="features-item-title">Personalized Recommendations:</h3>
-              <p class="features-item-text">
-                The app provides personalized recommendations based on user
-                preferences and behavior, allowing for more relevant content and
-                a more engaging experience.
-              </p>
-            </li>
-            <li class="features-item">
-              <h3 class="features-item-title">Real-Time Updates:</h3>
-              <p class="features-item-text">
-                Users receive real-time updates and notifications to stay
-                informed on important news and events, and to stay up-to-date
-                with changes to the app.
-              </p>
-            </li>
-          </ul>
-          <ul class="features-list">
-            <li class="features-item">
-              <h3 class="features-item-title">Integration with Other Apps:</h3>
-              <p class="features-item-text">
-                The app integrates with other popular apps, making it easy for
-                users to connect with their social media accounts, or to easily
-                make in-app purchases using their preferred payment method.
-              </p>
-            </li>
-            <li class="features-item">
-              <h3 class="features-item-title">Multi-Language Support:</h3>
-              <p class="features-item-text">
-                The app is designed to be accessible to users all around the
-                world, with support for multiple languages, making it easier for
-                people to use the app in their native language.
-              </p>
-            </li>
-            <li class="features-item">
-              <h3 class="features-item-title">Offline Capabilities:</h3>
-              <p class="features-item-text">
-                The app offers offline capabilities, allowing users to access
-                certain features and content even when they are not connected to
-                the internet.
-              </p>
-            </li>
-          </ul>
           <img src="./images/feature-img.png" alt="User" class="features-img" />
+          <ul class="features-list">
+            <li class="features-item">
+              <img
+                class="features-img-item"
+                src="/images/features-img-item.png"
+                alt="fire"
+              />
+              <div class="features-item-block">
+                <h3 class="features-item-title">User-Friendly Interface:</h3>
+                <p class="features-item-text">
+                  Intuitive and easy-to-navigate interface designed to provide a
+                  seamless mobile experience for users.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <img
+                class="features-img-item"
+                src="/images/features-img-item.png"
+                alt="fire"
+              />
+              <div class="features-item-block">
+                <h3 class="features-item-title">
+                  Personalized Recommendations:
+                </h3>
+                <p class="features-item-text">
+                  The app provides personalized recommendations based on user
+                  preferences and behavior, allowing for more relevant content
+                  and a more engaging experience.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <img
+                class="features-img-item"
+                src="/images/features-img-item.png"
+                alt="fire"
+              />
+              <div class="features-item-block">
+                <h3 class="features-item-title">Real-Time Updates:</h3>
+                <p class="features-item-text">
+                  Users receive real-time updates and notifications to stay
+                  informed on important news and events, and to stay up-to-date
+                  with changes to the app.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="features-list second">
+            <li class="features-item">
+              <img
+                class="features-img-item"
+                src="/images/features-img-item.png"
+                alt="fire"
+              />
+              <div class="features-item-block">
+                <h3 class="features-item-title">
+                  Integration with Other Apps:
+                </h3>
+                <p class="features-item-text">
+                  The app integrates with other popular apps, making it easy for
+                  users to connect with their social media accounts, or to
+                  easily make in-app purchases using their preferred payment
+                  method.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <img
+                class="features-img-item"
+                src="/images/features-img-item.png"
+                alt="fire"
+              />
+              <div class="features-item-block">
+                <h3 class="features-item-title">Multi-Language Support:</h3>
+                <p class="features-item-text">
+                  The app is designed to be accessible to users all around the
+                  world, with support for multiple languages, making it easier
+                  for people to use the app in their native language.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <img
+                class="features-img-item"
+                src="/images/features-img-item.png"
+                alt="fire"
+              />
+              <div class="features-item-block">
+                <h3 class="features-item-title">Offline Capabilities:</h3>
+                <p class="features-item-text">
+                  The app offers offline capabilities, allowing users to access
+                  certain features and content even when they are not connected
+                  to the internet.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="section-wtv">
-        <div class="wtv-container container">
-          <div class="test">
-            <h2 class="header-wtv">WATCH THE VIDEO</h2>
 
-            <p class="text-wtv">
-              Watch the video below to see our mobile app in action. With a
-              user-friendly interface, personalized recommendations, secure
-              transactions, and real-time updates, our app is available for
-              download on both Apple and Android devices and is designed to make
-              your life easier.
-            </p>
+      <section class="section-wtv container">
+        <div class="wtv-container">
+          <h2 class="header-wtv">WATCH THE VIDEO</h2>
 
-            <ul class="wtv-list">
-              <li>
-                <a href=""
-                  ><img
-                    class="wtv-list-item-pic"
-                    src="./images/Iphone-logo.png"
-                    alt="Iphone-logo"
-                /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img
-                    class="wtv-list-item-pic"
-                    src="./images/Android-logo.png"
-                    alt="Android-logo"
-                /></a>
-              </li>
-            </ul>
-          </div>
+          <p class="text-wtv">
+            Watch the video below to see our mobile app in action. With a
+            user-friendly interface, personalized recommendations, secure
+            transactions, and real-time updates, our app is available for
+            download on both Apple and Android devices and is designed to make
+            your life easier.
+          </p>
+
+          <ul class="wtv-list">
+            <li>
+              <a href="">
+                <img
+                  class="wtv-list-item-pic"
+                  src="./images/Iphone-logo.png"
+                  alt="Iphone-logo"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href=""
+                ><img
+                  class="wtv-list-item-pic"
+                  src="./images/Android-logo.png"
+                  alt="Android-logo"
+              /></a>
+            </li>
+          </ul>
 
           <img
             class="wtv-img-phone"
-            src="./images/Iphone-img.png"
+            srcset="
+              ./images/iphone-img@1x.png 1x,
+              ./images/iphone-img@2x.png 2x
+            "
+            src="./images/iphone-img@1x.png"
             alt="Iphone"
             width="501"
             height="282"
           />
         </div>
+        <img
+          class="wtv-img-spraying"
+          src="./images/wtv-img-spraying.png"
+          alt="spray"
+        />
       </section>
-      <section class="team">
+
+      <section class="team" id="team">
         <div class="container team-container">
           <h2 class="team-head">OUR TEAM</h2>
           <p class="team-text">
@@ -217,9 +332,10 @@
           </ul>
         </div>
       </section>
-      <section class="review-section">
+
+      <section class="review-section" id="testimonials">
         <div class="container review-container">
-          <h2 class="review-title">What Our Custumers Say</h2>
+          <h2 class="review-title">What Our Customer's Say</h2>
           <img
             class="review-img"
             src="./images/Ellipse1.png"
@@ -237,7 +353,20 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+
+    <footer class="footer" id="contact">
+      <img
+        class="footer-spray-big"
+        src="./images/footer-img-spay-big.png"
+        alt="footer-spray-big"
+      />
+
+      <img
+        class="footer-spray-small"
+        src="./images/footer-img-spay-small.png"
+        alt="footer-spray-small"
+      />
+
       <div class="container footer-container">
         <h2 class="footer-title">Contact Us</h2>
         <div class="footer-content-wrapper">
@@ -253,6 +382,11 @@
                   <svg class="footer-social-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
+                  <img
+                    class="footer-social-icon in-hover"
+                    src="./images/footer-fb-hover.png"
+                    alt="fb"
+                  />
                 </a>
               </li>
               <li class="footer-social-item">
@@ -260,6 +394,11 @@
                   <svg class="footer-social-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
+                  <img
+                    class="footer-social-icon in-hover"
+                    src="./images/footer-twitter-hover.png"
+                    alt="fb"
+                  />
                 </a>
               </li>
               <li class="footer-social-item">
@@ -267,6 +406,11 @@
                   <svg class="footer-social-icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
+                  <img
+                    class="footer-social-icon in-hover"
+                    src="./images/footer-in-hover.png"
+                    alt="fb"
+                  />
                 </a>
               </li>
             </ul>
@@ -324,9 +468,9 @@
         </p>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn-close">
+        <button type="button" class="modal-btn-close" data-modal-close>
           <svg class="btn-close" width="16" height="16">
             <use href="./images/icons.svg#icon-btn-close"></use>
           </svg>
@@ -471,5 +615,7 @@
         <button type="button" class="modal-btn-download">Download</button>
       </div>
     </div>
+    <script src="./js/mobmenu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

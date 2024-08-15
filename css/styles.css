@@ -96,6 +96,7 @@ body {
   max-width: 179px;
   margin: 0 auto 80px;
 }
+
 .features-subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -105,15 +106,6 @@ body {
   margin: 0 auto;
   max-width: 855px;
   padding-bottom: 56px;
-}
-
-.container .team-container {
-  padding: 25px 16px;
-}
-
-.team-head {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .features {
@@ -126,6 +118,7 @@ body {
   display: flex;
   position: relative;
 }
+
 .features-list {
   display: flex;
   flex-direction: column;
@@ -133,8 +126,10 @@ body {
   gap: 24px;
   padding-top: 61px;
 }
+
 .features-item {
 }
+
 .features-item-title {
   margin-bottom: 13px;
 }
@@ -151,6 +146,16 @@ body {
 /* END SECTION FEATURES */
 
 /*        team section */
+/* ??? */
+.container .team-container {
+  padding: 25px 16px;
+}
+
+.team-head {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ??? */
 .team {
   background-image: url(../images/ourteam-img-spraying.png);
   background-repeat: no-repeat;
@@ -467,16 +472,6 @@ body {
   gap: 20px;
 }
 
-.wtv-img-phone {
-  display: flex;
-  margin-left: auto;
-}
-
-.test {
-  display: flex;
-  flex-direction: column;
-}
-
 .wtv-list-item-pic {
   width: 60px;
   height: 60px;
@@ -707,6 +702,7 @@ body {
   border: none;
   display: block;
   font-weight: 700;
+
   font-size: 16px;
   padding: 12px 60px;
   margin: 0 auto;
