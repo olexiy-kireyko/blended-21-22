@@ -205,14 +205,14 @@ html {
   padding-top: 182px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/hero-bg-mob@1x.jpg);
+  background-image: url("/images/hero-bg-mob@1x.jpg");
 }
 
 @media screen and (-web-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .hero {
-    background-image: url(/images/hero-bg-mob@2x.jpg);
+    background-image: url("/images/hero-bg-mob@2x.jpg");
   }
 }
 
